@@ -2,9 +2,13 @@ Source: pixman
 Section: devel
 Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: Julien Cristau <jcristau@debian.org>, David Nusinow <dnusinow@debian.org>
-Build-Depends: debhelper (>= 5), automake, autoconf, libtool, pkg-config, quilt
-Standards-Version: 3.8.3
+Uploaders: Cyril Brulebois <kibi@debian.org>
+Build-Depends:
+ debhelper (>= 8.1.3),
+ dh-autoreconf,
+ pkg-config,
+ quilt,
+Standards-Version: 3.9.2
 Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/pixman
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/pixman.git
 
@@ -14,6 +18,8 @@ Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Description: pixel-manipulation library for X and cairo
  A library for manipulating pixel regions -- a set of Y-X banded
  rectangles, image compositing using the Porter/Duff model
@@ -38,6 +44,7 @@ Architecture: any
 Depends:
  libpixman-1-0 (= ${binary:Version}),
  ${misc:Depends},
+Multi-Arch: same
 Description: pixel-manipulation library for X and cairo (debugging symbols)
  Debugging symbols for the Cairo/X pixel manipulation library.  This is
  needed to debug programs linked against libpixman0.
@@ -48,7 +55,6 @@ Architecture: any
 Depends:
  libpixman-1-0 (= ${binary:Version}),
  ${misc:Depends},
-Conflicts: libpixman1-dev
 Description: pixel-manipulation library for X and cairo (development files)
  Development libraries, header files and documentation needed by
  programs that want to compile with the Cairo/X pixman library.

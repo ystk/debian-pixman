@@ -1,1 +1,1 @@
-usr/lib/libpixman-1.so.*
+usr/lib/*/libpixman-1.so.* /usr/lib

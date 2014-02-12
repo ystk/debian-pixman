@@ -1,7 +1,10 @@
 libpixman-1.so.0 libpixman-1-0 #MINVER#
  pixman_add_trapezoids@Base 0
  pixman_add_traps@Base 0
+ pixman_add_triangles@Base 0.21.6
  pixman_blt@Base 0
+ pixman_composite_trapezoids@Base 0.21.6
+ pixman_composite_triangles@Base 0.21.6
  pixman_compute_composite_region@Base 0
  pixman_disable_out_of_bounds_workaround@Base 0.15.16
  pixman_edge_init@Base 0
@@ -21,14 +24,19 @@ libpixman-1.so.0 libpixman-1-0 #MINVER#
  pixman_f_transform_translate@Base 0.13.2
  pixman_fill@Base 0
  pixman_image_composite@Base 0.15.14
+ pixman_image_composite32@Base 0.18.0
  pixman_image_create_bits@Base 0.15.12
  pixman_image_create_conical_gradient@Base 0
  pixman_image_create_linear_gradient@Base 0
  pixman_image_create_radial_gradient@Base 0
  pixman_image_create_solid_fill@Base 0
+ pixman_image_fill_boxes@Base 0.18.0
  pixman_image_fill_rectangles@Base 0.15.14
+ pixman_image_get_component_alpha@Base 0.19.6
  pixman_image_get_data@Base 0
  pixman_image_get_depth@Base 0
+ pixman_image_get_destroy_data@Base 0.18.0
+ pixman_image_get_format@Base 0.19.6
  pixman_image_get_height@Base 0
  pixman_image_get_stride@Base 0
  pixman_image_get_width@Base 0
@@ -49,6 +57,7 @@ libpixman-1.so.0 libpixman-1-0 #MINVER#
  pixman_line_fixed_edge_init@Base 0
  pixman_rasterize_edges@Base 0
  pixman_rasterize_trapezoid@Base 0
+ pixman_region32_clear@Base 0.25.2
  pixman_region32_contains_point@Base 0.11.2
  pixman_region32_contains_rectangle@Base 0.11.2
  pixman_region32_copy@Base 0.11.2
@@ -56,10 +65,12 @@ libpixman-1.so.0 libpixman-1-0 #MINVER#
  pixman_region32_extents@Base 0.11.2
  pixman_region32_fini@Base 0.11.2
  pixman_region32_init@Base 0.11.2
+ pixman_region32_init_from_image@Base 0.18.0
  pixman_region32_init_rect@Base 0.11.2
  pixman_region32_init_rects@Base 0.11.2
  pixman_region32_init_with_extents@Base 0.11.2
  pixman_region32_intersect@Base 0.11.2
+ pixman_region32_intersect_rect@Base 0.19.6
  pixman_region32_inverse@Base 0.11.2
  pixman_region32_n_rects@Base 0.11.2
  pixman_region32_not_empty@Base 0.11.2
@@ -70,6 +81,7 @@ libpixman-1.so.0 libpixman-1-0 #MINVER#
  pixman_region32_translate@Base 0.11.2
  pixman_region32_union@Base 0.11.2
  pixman_region32_union_rect@Base 0.11.2
+ pixman_region_clear@Base 0.25.2
  pixman_region_contains_point@Base 0
  pixman_region_contains_rectangle@Base 0
  pixman_region_copy@Base 0
@@ -77,10 +89,12 @@ libpixman-1.so.0 libpixman-1-0 #MINVER#
  pixman_region_extents@Base 0
  pixman_region_fini@Base 0
  pixman_region_init@Base 0
+ pixman_region_init_from_image@Base 0.18.0
  pixman_region_init_rect@Base 0
  pixman_region_init_rects@Base 0
  pixman_region_init_with_extents@Base 0
  pixman_region_intersect@Base 0
+ pixman_region_intersect_rect@Base 0.19.6
  pixman_region_inverse@Base 0
  pixman_region_n_rects@Base 0
  pixman_region_not_empty@Base 0
