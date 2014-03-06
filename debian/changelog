@@ -1,3 +1,10 @@
+pixman (0.16.4-1+deb6u1) squeeze-security; urgency=high
+
+  * pixman_trapezoid_valid(): Fix underflow when bottom is close to MIN_INT
+    Addresses CVE-2013-6425
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 16 Dec 2013 18:44:45 +0100
+
 pixman (0.16.4-1) unstable; urgency=low
 
   * New upstream release.
