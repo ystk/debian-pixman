@@ -1,3 +1,62 @@
+pixman (0.32.6-2) sid; urgency=medium
+
+  [ Julien Cristau ]
+  * Disable vmx on ppc64el (closes: #745547).  Thanks, Breno Leitao!
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 18 Aug 2014 22:50:39 +0200
+
+pixman (0.32.6-1) sid; urgency=medium
+
+  * New upstream release.
+  * Bump debhelper compat level to 9.
+  * Remove Cyril from Uploaders.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 13 Jul 2014 16:31:06 +0200
+
+pixman (0.32.4-1) sid; urgency=low
+
+  * New upstream release.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 17 Dec 2013 22:04:15 +0100
+
+pixman (0.30.2-2) sid; urgency=low
+
+  * Cherry-pick upstream bigfixes for fixing a crash when rendering
+    invalid trapezoids. (LP: #1197921)
+    Addresses CVE-2013-6425.
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 18 Nov 2013 15:08:56 +0100
+
+pixman (0.30.2-1) sid; urgency=low
+
+  * New upstream release
+    - includes big-endian matrix-test fix
+  * Increase alpha-loop test timeout some more.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 13 Aug 2013 12:08:18 +0200
+
+pixman (0.30.0-3) sid; urgency=low
+
+  * Increase timeout for the alpha-loop test.  That will hopefully let it pass
+    on the mips buildd.
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 03 Aug 2013 10:24:29 +0200
+
+pixman (0.30.0-2) sid; urgency=low
+
+  * Disable silent Makefile rules.
+  * Disable arm iwmmxt fast paths.  It breaks the build.
+  * Fix matrix-test on big endian (patch from Siarhei Siamashka).
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 27 Jul 2013 21:40:48 +0200
+
+pixman (0.30.0-1) sid; urgency=low
+
+  [ Maarten Lankhorst, Cyril Brulebois, Julien Cristau ]
+  * New upstream release.
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 26 Jul 2013 14:58:25 +0200
+
 pixman (0.26.0-4) sid; urgency=high
 
   * Fix for CVE-2013-1591 (stack-based buffer overflow), cherry-picked from
