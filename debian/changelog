@@ -1,3 +1,10 @@
+pixman (0.32.6-3) sid; urgency=medium
+
+  [ intrigeri ]
+  * Enable hardening build flags with dpkg-buildflags.
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 23 Aug 2014 22:16:40 -0700
+
 pixman (0.32.6-2) sid; urgency=medium
 
   [ Julien Cristau ]

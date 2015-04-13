@@ -3,13 +3,16 @@
 PACKAGE = libpixman-1-0
 SHLIBS  = 0.25.2
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow
+
 # Disable Gtk+ autodetection:
 override_dh_auto_configure:
 	# also avoid loongson2f optimizations on mipsel, see 0.26.0-3
 	# changelog entry:
 	LS_CFLAGS=" " dh_auto_configure -- --disable-gtk \
 	  --disable-silent-rules \
-	  --disable-arm-iwmmxt
+	  --disable-arm-iwmmxt \
+	  $(shell dpkg-buildflags --export=configure)
 
 # Install in debian/tmp to retain control through dh_install:
 override_dh_auto_install:
