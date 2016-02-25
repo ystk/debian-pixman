@@ -1,1 +1,2 @@
 pixman-arm-don-t-use-env-vars-to-get-hwcap-platform.patch
+CVE-2014-9766.patch
