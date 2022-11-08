@@ -1,3 +1,9 @@
+pixman (0.32.6-3+deb8u2) jessie-security; urgency=medium
+
+  * CVE-2022-44638: integer overflow leading to buffer overflow write.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 08 Nov 2022 10:12:33 +0100
+
 pixman (0.32.6-3+deb8u1) jessie-security; urgency=high
 
   * Non-maintainer upload by the LTS Team. 

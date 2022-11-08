@@ -1,3 +1,4 @@
 ppc64el.diff
 test-increase-timeout.diff
 CVE-2015-5297.patch
+CVE-2022-44638.patch
